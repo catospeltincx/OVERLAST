@@ -66,15 +66,48 @@ img.sticker-group3 {
 .affiche-wrap {
     position: absolute;
     top: 0;
-    display: grid;
-    /* grid-template-columns: 1fr; */
     z-index: 0;   
 }
 
-img.affiche {
-    width: 10px;
+img.affiche-group1 {
+    width: 10vw;
+    margin: 20vh 0 0 70vw;
 }
 
+img.affiche-group2 {
+    width: 40vw;
+    margin: 60vh 0 0 0;
+}
+
+img.affiche-group3 {
+    width: 60vw;
+    margin: 100vh 0 0 10vw;
+}
+
+/* BUTTONS */
+.buttons {
+    position: absolute;
+    display: block;
+    align-items: center;
+    width: 60vw;
+    margin: 50vh 0 0 10vw;
+}
+
+.about {
+    font-size: 100px;
+    color: aqua;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+}
+
+.about:hover {
+    font-size: 100px;
+    color: aqua;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+}
 
 
 

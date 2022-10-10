@@ -5,19 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OVERLAST</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <!-- <script>
       var scroll = setInterval(function () {
         window.scrollBy(0, 1);
       }, 100);
     </script> -->
+
   </head>
   <header>
     <p class="title">wwwOVERLAST</p>
     <p class="intro">supporting youn belgian artists since 2017</p>
   </header>
+
+
   <body>
+
+    <div class="buttons">
+      <a class="about" href="about.html" data-aos="flip-right"> ABOUT</a>
+    </div>
+
     <div class="feest-wrap">
       <img class="feest" src="src/test-src/background_1.png" />
       <img class="feest" src="src/test-src/background_2.png" />
@@ -69,36 +77,21 @@
     </div>
 
     <div class="affiche-wrap">
-      <img class="affice" src="src/test-src/affiche_1.jpg" />
-      <img class="affice" src="src/test-src/affiche_2.jpg" />
-      <img class="affice" src="src/test-src/affiche_3.jpg" />
-      <img class="affice" src="src/test-src/affiche_4.jpg" />
-      <img class="affice" src="src/test-src/affiche_5.jpg" />
-      <img class="affice" src="src/test-src/affiche_6.jpg" />
-      <img class="affice" src="src/test-src/affiche_7.jpg" />
-      <img class="affice" src="src/test-src/affiche_8.jpg" />
-      <img class="affice" src="src/test-src/affiche_9.jpg" />
+      <img class="affiche-group1" src="/src/test-src/affiche_1.jpg" alt="">
+      <img class="affiche-group1" src="/src/test-src/affiche_2.jpg" alt="">
+      <img class="affiche-group2" src="/src/test-src/affiche_3.jpg" alt="">
+      <img class="affiche-group3" src="/src/test-src/affiche_4.jpg" alt="">
+      <img class="affiche-group2" src="/src/test-src/affiche_5.jpg" alt="">
+      <img class="affiche-group2" src="/src/test-src/affiche_6.jpg" alt="">
+      <img class="affiche-group3" src="/src/test-src/affiche_7.jpg" alt="">
+      <img class="affiche-group3" src="/src/test-src/affiche_8.jpg" alt="">
+      <img class="affiche-group1" src="/src/test-src/affiche_9.jpg" alt="">
     </div>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
-    <div class="layer-2"></div>
-    <section class="about">
-      <p>about</p>
-    </section>
-    <section class="list">
-      <p>list</p>
-    </section>
-    <section class="workshop">
-      <p>workshops</p>
-    </section>
-    <section class="archive">
-      <p>archive</p>
-    </section>
-    <section class="questions">
-      <p>questions</p>
-    </section>
   </body>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+
 </html>
