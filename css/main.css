@@ -87,27 +87,45 @@ img.affiche-group3 {
 /* BUTTONS */
 .buttons {
     position: absolute;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    top: 200px;
+    padding-left: 40vw;
+}
+
+a.buttons {
+    text-align: center;
     display: block;
-    align-items: center;
-    width: 60vw;
-    margin: 50vh 0 0 10vw;
+    margin: 0 auto;
 }
 
-.about {
+a.about {
     font-size: 100px;
     color: aqua;
-    z-index: 99;
-    position: absolute;
-    top: 0;
+    margin-bottom: 120vh;
 }
 
-.about:hover {
+a.list {
     font-size: 100px;
-    color: aqua;
-    z-index: 99;
-    position: absolute;
-    top: 0;
+    color: rgb(230, 0, 255);
+    margin-bottom: 120vh;
+    background-color: aliceblue;
+    height: fit-content;
+    padding: 0;
+    border-radius: 45%;
+    box-shadow:
+    0 0 60px 30px #fff,  /* inner white */
+    0 0 100px 60px #f0f, /* middle magenta */
+    0 0 140px 90px #0ff; /* outer cyan */
 }
+
+a.list:hover {
+
+    color: rgb(0, 255, 102);
+
+}
+
 
 
 
