@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+
+p {
+    color: rgb(248, 0, 0);
+    background-color: aquamarine;
+    padding: 35px;
+    width: 45px;
+    height: 45px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+p:hover {
+background-color: aqua;
+cursor: pointer;
+}
+

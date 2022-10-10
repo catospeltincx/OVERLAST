@@ -5,7 +5,7 @@
 body {
     display: block;
     text-align: center;
-    background-color: rgb(121, 0, 235);
+    background: linear-gradient(to bottom, #eeeeee 0%, #d400ff 100%);
     margin: 0;
 }
 
@@ -17,10 +17,32 @@ img {
     padding: 0;
 }
 
+a {
+    font-family: "courier";
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Standard";
+    src: url(/fonts/standard-bold-webfont.ttf);
+}
+
 
 /* HEADER */
 header {
     padding: 50px;
+}
+
+.title {
+    font-family: "Standard";
+    font-size: 50px;
+}
+
+.intro {
+    font-family: "Standard";
+    font-size: 25px;
+    max-width: 20vw;
+    color: red;
 }
 
 
@@ -35,7 +57,7 @@ header {
 
 img.feest {
     width: 50vw;
-    margin-bottom: 70vh;
+    margin-bottom: 20vh;
 }
 
 /* STICKER */
@@ -76,12 +98,12 @@ img.affiche-group1 {
 
 img.affiche-group2 {
     width: 40vw;
-    margin: 60vh 0 0 0;
+    margin: 40vh 0 0 0;
 }
 
 img.affiche-group3 {
     width: 60vw;
-    margin: 100vh 0 0 10vw;
+    margin: 10vh 0 0 10vw;
 }
 
 /* BUTTONS */
@@ -101,14 +123,33 @@ a.buttons {
 }
 
 a.about {
-    font-size: 100px;
-    color: aqua;
+    font-size: 35px;
+    color: rgb(0, 1, 1);
     margin-bottom: 120vh;
+    color: rgb(230, 0, 255);
+    margin-bottom: 120vh;
+    background-color: aliceblue;
+    height: fit-content;
+    padding: 0;
+    border-radius: 45%;
+    box-shadow:
+    0 0 60px 30px #fff,  /* inner white */
+    0 0 100px 60px #f0f, /* middle magenta */
+    0 0 140px 90px #0ff; /* outer cyan */
+}
+
+a.about:hover {
+    color: rgb(0, 255, 102);
+    box-shadow:
+    0 0 60px 30px rgb(249, 65, 65),  /* inner white */
+    0 0 100px 60px rgb(255, 201, 255), /* middle magenta */
+    0 0 140px 90px rgb(6, 255, 255); /* outer cyan */
+
 }
 
 a.list {
-    font-size: 100px;
-    color: rgb(230, 0, 255);
+    font-size: 35px;
+    color: rgb(1, 0, 2);
     margin-bottom: 120vh;
     background-color: aliceblue;
     height: fit-content;
@@ -124,6 +165,12 @@ a.list:hover {
 
     color: rgb(0, 255, 102);
 
+}
+
+a.arrow {
+    color: rgb(0, 208, 255);
+    font-size: 50px;
+    margin-bottom: 50px;
 }
 
 
