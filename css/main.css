@@ -1,179 +1,108 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    display: block;
-    text-align: center;
-    background: linear-gradient(to bottom, #eeeeee 0%, #d400ff 100%);
-    margin: 0;
+    margin: 0cm;
+    background-color: blue;
 }
 
-p {
-    margin: 0;
-}
-
-img {
-    padding: 0;
-}
-
-a {
-    font-family: "courier";
-    text-decoration: none;
-}
-
-@font-face {
-    font-family: "Standard";
-    src: url(/fonts/standard-bold-webfont.ttf);
-}
-
-
-/* HEADER */
-header {
-    padding: 50px;
-}
-
-.title {
-    font-family: "Standard";
-    font-size: 50px;
-}
-
-.intro {
-    font-family: "Standard";
-    font-size: 25px;
-    max-width: 20vw;
-    color: red;
-}
-
-
-/* !!!HOME-PAGE-LAYERS!!! */
-/* FEEST */
-.feest-wrap {
-    position: absolute;
+/* BACKGROUND */
+.background-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    z-index: 1;
+    z-index: -99;
+    padding-top: 45vh;
 }
 
-img.feest {
+.background-grid img {
     width: 50vw;
-    margin-bottom: 20vh;
 }
 
-/* STICKER */
-.sticker-wrap {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-    z-index: 2;
+/* UITZONDERINGEN */
+
+.top {
+    padding-bottom: 500px;
 }
 
-img.sticker-group1 {
-    width: 35vw;
-    margin: 100vh 0 0 20vw;
-    top: 0;
+.right {
+    padding-left: 50vw;
 }
 
-img.sticker-group2 {
-    width: 25vw;
-    margin: 100vh 0 0 20vw;
-}
+/* LAYERS */
 
-img.sticker-group3 {
-    width: 15vw;
-    margin: 100vh 0 0 70vw;
-}
-
-/* AFFICHES */
-.affiche-wrap {
+/** HAND **/
+.layer__hand {
     position: absolute;
-    top: 0;
-    z-index: 0;   
-}
-
-img.affiche-group1 {
-    width: 10vw;
-    margin: 20vh 0 0 70vw;
-}
-
-img.affiche-group2 {
-    width: 40vw;
-    margin: 40vh 0 0 0;
-}
-
-img.affiche-group3 {
-    width: 60vw;
-    margin: 10vh 0 0 10vw;
-}
-
-/* BUTTONS */
-.buttons {
-    position: absolute;
-    z-index: 99;
     display: flex;
     flex-direction: column;
-    top: 200px;
-    padding-left: 40vw;
+    justify-content: space-around;
+    top: 0;
+    height: 8800px;
+    padding: 25px;
 }
 
-a.buttons {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
+.layer__hand img {
+    max-width: 20%;
 }
 
-a.about {
-    font-size: 35px;
-    color: rgb(0, 1, 1);
-    margin-bottom: 120vh;
-    color: rgb(230, 0, 255);
-    margin-bottom: 120vh;
-    background-color: aliceblue;
-    height: fit-content;
-    padding: 0;
-    border-radius: 45%;
-    box-shadow:
-    0 0 60px 30px #fff,  /* inner white */
-    0 0 100px 60px #f0f, /* middle magenta */
-    0 0 140px 90px #0ff; /* outer cyan */
+/** CUT **/
+.layer__cut {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 0;
+    height: 8800px;
 }
 
-a.about:hover {
-    color: rgb(0, 255, 102);
-    box-shadow:
-    0 0 60px 30px rgb(249, 65, 65),  /* inner white */
-    0 0 100px 60px rgb(255, 201, 255), /* middle magenta */
-    0 0 140px 90px rgb(6, 255, 255); /* outer cyan */
-
+.layer__cut img{
+    max-width: 100%;
 }
 
-a.list {
-    font-size: 35px;
-    color: rgb(1, 0, 2);
-    margin-bottom: 120vh;
-    background-color: aliceblue;
-    height: fit-content;
-    padding: 0;
-    border-radius: 45%;
-    box-shadow:
-    0 0 60px 30px #fff,  /* inner white */
-    0 0 100px 60px #f0f, /* middle magenta */
-    0 0 140px 90px #0ff; /* outer cyan */
+/** GIF **/
+.layer__gif {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 0;
+    height: 8800px;
 }
 
-a.list:hover {
-
-    color: rgb(0, 255, 102);
-
+.layer__gif img{
+    max-width: 50%;
 }
 
-a.arrow {
-    color: rgb(0, 208, 255);
-    font-size: 50px;
-    margin-bottom: 50px;
+/** STICKER **/
+.layer__sticker {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 0;
+    height: 8800px;
 }
 
+.layer__sticker img{
+    max-width: 45%;
+}
 
+@media screen and (min-width: 700px) {
+    .background-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
+    .background-grid img {
+        width: 100%;
+    }
+  }
+
+@media screen and (min-width: 900px) {
+  .background-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      width: 100%;
+  }
+
+  .background-grid img {
+    width: 100%;
+}
+}
 
 
