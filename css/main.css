@@ -24,16 +24,20 @@ header {
 }
 
 .intro p {
-    padding-left: 50vw;
+    padding-left: 40vw;
     font-style: italic;
+    color: yellow;
+    font-size: 18px;
 }
 
 .menu {
     display: flex;
     flex-direction: column;
+    margin: 15px 15px 0 0;
+    z-index: 101;
 }
 
-.menu a{
+.menu a {
     text-decoration: none;
     font-family: 'MatrixRegular';
     font-size: 30px;
@@ -41,7 +45,8 @@ header {
     background-color: white;
     color: red;
     border-radius: 50px;
-    padding: 7px;
+    width: fit-content;
+    margin-bottom: 5px;    
 }
 
 .menu a:hover {
@@ -62,7 +67,7 @@ header {
     height: 10000px;
 }
 
-.buttons a{
+.buttons a {
     text-decoration: none;
     font-family: 'MatrixRegular';
     font-size: 30px;
