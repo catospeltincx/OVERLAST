@@ -3,6 +3,20 @@ body {
     background-color: blue;
 }
 
+p {
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    position: absolute;
+    font-size: 35px;
+    max-width: 50vw;
+    margin: 25px;
+    color: white;
+    line-height: 40px;
+}
+
 /* BACKGROUND */
 .background-grid {
     display: grid;
@@ -18,8 +32,9 @@ body {
 /* UITZONDERINGEN */
 
 .top {
-    padding-bottom: 500px;
+    padding-top: 500px;
 }
+
 
 .right {
     padding-left: 50vw;
