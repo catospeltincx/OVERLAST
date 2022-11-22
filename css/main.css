@@ -19,51 +19,56 @@ p {
 
 /* HEADER */
 header {
-    display: flex;
-    flex-direction: row;
     height: fit-content;
 }
 
+.intro {
+    display: flex;
+    flex-direction: row;
+}
+
 .intro img {
-    padding: 25px 0 0 25px;
-    max-width: 50vw;
+    padding: 50px 0 0 15px;
+    width: 50vw;
 }
 
 .intro p {
-    padding-left: 40vw;
-    font-style: italic;
-    color: yellow;
-    font-size: 18px;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: 'Kanalisirung';
+    letter-spacing: 3px;
+    width: 50vw;
 }
 
 .menu {
-    width: 32vw;
+    width: fit-content;
     z-index: 101; 
     position: fixed;
     top: 0;
-    right: 0;
     word-spacing: 7px;
     background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(106,255,144,1) 100%);
-    padding: 2px 0 4px 10px;
-    border: 1px solid black;
+    padding: 2px 10px 4px 10px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 0;
+    border-left: 0;
+    word-spacing: 15px;
 }
 
 .menu a {
     text-decoration: none;
     font-family: 'MatrixRegular';
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(0, 0, 0);
     width: fit-content;
     margin-bottom: 5px; 
-    
-    
 }
 
 .menu a:hover {
     color: aqua;
     
 }
-
 
 /* BUTTONS */
 .buttons {
@@ -75,9 +80,11 @@ header {
     justify-content: space-around;
     top: 0;
     height: 9195px;
+    margin: 0 auto 0 auto;
+    text-align: center;
 }
 
-.buttons a {
+.button a {
     text-decoration: none;
     font-family: 'MatrixRegular';
     font-size: 75px;
@@ -86,13 +93,16 @@ header {
     color: rgb(0, 0, 0);
     border-radius: 50%;
     padding: 25px 30px 30px 30px;
-    margin: 0 auto 0 auto;
     border: 2px solid black;
 }
 
 .buttons a:hover {
     color: aqua;
     cursor: pointer;
+}
+
+.button img {
+    width: 50vw;
 }
 
 
