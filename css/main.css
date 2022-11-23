@@ -17,6 +17,11 @@ p {
     margin: 0;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 /* HEADER */
 header {
     height: fit-content;
@@ -184,29 +189,22 @@ header {
     height: 9195px;
 }
 
-.layer__sticker img{
-    max-width: 45%;
-}
 
 @media screen and (min-width: 700px) {
     .background-grid {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    img {
+        max-width: 25vw;
     }
 
     .background-grid img {
-        width: 100%;
+        width: 25vw;
     }
+
+    
   }
 
-@media screen and (min-width: 900px) {
-  .background-grid {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      width: 100%;
-  }
-
-  .background-grid img {
-    width: 100%;
-}
-}
 
 
