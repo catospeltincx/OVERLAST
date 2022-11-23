@@ -149,4 +149,59 @@ img {
 
 
 /* desktop */
+@media screen and (min-width: 700px) {
+img {
+    width: 10vw;
+}
 
+.wrap_2017 {
+width: 40vw;
+margin-bottom: 10vh;
+display: grid;
+grid-template-columns: repeat(4, 25%);
+padding: 0 0 0 20vw;
+}
+
+.wrap_2018 {
+width: 40vw;
+margin-bottom: 10vh;
+display: grid;
+grid-template-columns: repeat(5, 25%);
+padding: 0 0 0 10vw;
+}
+
+.wrap_2019 {
+    width: 40vw;
+    margin-bottom: 10vh;
+    display: grid;
+    grid-template-columns: repeat(6, 25%);
+    padding: 0 0 0 30vw;
+}
+
+.wrap_2020 {
+    width: 40vw;
+    margin-bottom: 10vh;
+    display: grid;
+    grid-template-columns: repeat(2, 25%);
+    padding: 0 0 0 10vw;
+}
+
+.wrap_2021 {
+    width: 40vw;
+    margin-bottom: 10vh;
+    display: grid;
+    grid-template-columns: repeat(7, 25%);
+    padding: 0 0 0 10vw;
+}
+
+.wrap_2022 {
+    width: 40vw;
+    margin-bottom: 10vh;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    padding: 0 0 0 50vw;
+}
+
+
+    
+  }
