@@ -8,35 +8,124 @@ body {
     src: url(/fonts/MatrixRegular.otf);
 }
 
-.list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   
+/* in general */
+img {
+    width: 33.33vw;
 }
 
-.list img {
-    max-width: 50vw;
+/* header */
+.home {
+    color: rgb(255, 0, 208);
 }
 
-.title {
+/* years */
+.year {
     color: rgb(255, 0, 0);
-    font-family: 'MatrixRegular';
-    font-size: 50px;
-    text-align: center;
+    padding: 15px;
 }
 
-.artist {
-    max-width: 50vw;
+/* 2017 */
+.wrap_2017 {
+    margin-bottom: 40vh;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
 }
 
-p {
-    color: white;
-    max-width: 50vw;
+.artist_2017{
+    background-color: aqua;
+}
+
+.artist_2017:hover {
+    background-color: rgb(255, 255, 255);
 }
 
 a {
-    color: rgb(174, 0, 255);
-    max-width: 50vw;
+    font-family: 'MatrixRegular';
+    font-size: 25px;
+    padding: 10px;
+    color: rgb(255, 0, 0);
+    top: 0%;
+    left: 0%;
+    transform: rotate(-45deg);
+    max-width: 100px;
+    line-height: 30px;
+    word-break: break-all;
+    text-decoration: none;
 }
 
+a:hover {
+    cursor: pointer;
+    color: red;
+    text-decoration: underline 3px solid rgb(99, 9, 255);
+}
+
+
+/* 2018 */
+.wrap_2018 {
+    margin-bottom: 40vh;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+}
+
+.artist_2018{
+    background-color: rgb(255, 0, 242);
+    position: relative;
+}
+
+
+/* 2019 */
+.wrap_2019 {
+    margin-bottom: 40vh;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+}
+
+.artist_2019{
+    background-color: rgb(47, 255, 0);
+    position: relative;
+}
+
+
+/* 2020 */
+.wrap_2020 {
+    margin-bottom: 40vh;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);   
+}
+
+.artist_2020{
+    background-color: rgb(255, 183, 0);
+    position: relative;
+}
+
+
+/* 2021 */
+.wrap_2021 {
+    margin-bottom: 40vh;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+}
+
+.artist_2021{
+    background-color: rgb(4, 0, 255);
+    position: relative;
+}
+
+
+/* 2022 */
+.wrap_2022 {
+    margin-bottom: 40vh;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+}
+
+.artist_2022{
+    background-color: rgb(255, 98, 0);
+    position: relative;
+}
+
+
+
+
+/* desktop */
 
