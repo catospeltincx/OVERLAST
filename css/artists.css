@@ -4,8 +4,18 @@ body {
 }
 
 @font-face {
-    font-family: 'MatrixRegular';
-    src: url(/fonts/MatrixRegular.otf);
+    font-family: 'BaseMonoReg';
+    src: url(/fonts/BaseMonoNarrowReg.otf);
+}
+
+@font-face {
+    font-family: 'BaseMonoBold';
+    src: url(/fonts/BaseMonoNarrowBold.otf);
+}
+
+@font-face {
+    font-family: 'Kanaliserung';
+    src: url(/fonts/Kanalisirung.otf);
 }
 
 /* in general */
@@ -18,10 +28,49 @@ img {
     color: rgb(255, 0, 208);
 }
 
-/* years */
+/* general */
 .year {
-    color: rgb(255, 0, 0);
+    font-family: 'Kanaliserung';
+    color: rgb(255, 255, 255);
     padding: 15px;
+    font-size: 25px;
+}
+
+.artist_2017:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.artist_2018:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.artist_2019:hover {
+    background-color: rgb(255, 251, 149);
+}
+
+.artist_2020:hover {
+    background-color: rgb(112, 184, 255);
+}
+
+.artist_2021:hover {
+    background-color: rgb(143, 134, 0);
+}
+
+.artist_2022:hover {
+    background-color: rgb(236, 159, 236);
+}
+
+a.name {
+    font-family: 'BaseMonoReg';
+    font-size: 15px;
+    padding: 6px 0 0 15px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: absolute;
+}
+
+img {
+    padding-top: 25px;
 }
 
 /* 2017 */
@@ -33,30 +82,7 @@ img {
 
 .artist_2017{
     background-color: aqua;
-}
-
-.artist_2017:hover {
-    background-color: rgb(255, 255, 255);
-}
-
-a {
-    font-family: 'MatrixRegular';
-    font-size: 25px;
-    padding: 10px;
-    color: rgb(255, 0, 0);
-    top: 0%;
-    left: 0%;
-    transform: rotate(-45deg);
-    max-width: 100px;
-    line-height: 30px;
-    word-break: break-all;
-    text-decoration: none;
-}
-
-a:hover {
-    cursor: pointer;
-    color: red;
-    text-decoration: underline 3px solid rgb(99, 9, 255);
+    position: relative;
 }
 
 
@@ -69,7 +95,6 @@ a:hover {
 
 .artist_2018{
     background-color: rgb(255, 0, 242);
-    position: relative;
 }
 
 
@@ -82,7 +107,6 @@ a:hover {
 
 .artist_2019{
     background-color: rgb(47, 255, 0);
-    position: relative;
 }
 
 
@@ -95,7 +119,6 @@ a:hover {
 
 .artist_2020{
     background-color: rgb(255, 183, 0);
-    position: relative;
 }
 
 
@@ -108,7 +131,6 @@ a:hover {
 
 .artist_2021{
     background-color: rgb(4, 0, 255);
-    position: relative;
 }
 
 
@@ -121,7 +143,6 @@ a:hover {
 
 .artist_2022{
     background-color: rgb(255, 98, 0);
-    position: relative;
 }
 
 
