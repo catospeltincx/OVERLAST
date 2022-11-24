@@ -1,6 +1,6 @@
 body {
     margin: 0cm;
-    background-color: blue;
+    background-color: rgb(0, 8, 255);
 }
 
 @font-face {
@@ -20,6 +20,11 @@ p {
 img {
     width: 100%;
     height: auto;
+}
+
+/*  AUDIO-BAR */
+#playlist {
+    z-index: 1000;
 }
 
 /* HEADER */
