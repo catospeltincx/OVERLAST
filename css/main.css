@@ -27,15 +27,10 @@ header {
     height: fit-content;
 }
 
-.intro {
-    display: flex;
-    flex-direction: row;
+.intro img{
+   width: 50vw;
 }
 
-.intro img {
-    padding: 50px 0 0 15px;
-    width: 50vw;
-}
 
 .intro p {
     padding: 15px;
@@ -87,23 +82,26 @@ header {
     height: 9195px;
     margin: 0 auto 0 auto;
     text-align: center;
+    height: 4000px;
+    
 }
 
 .button a {
     text-decoration: none;
-    font-family: 'MatrixRegular';
+    font-family: 'Kanalisirung';
     font-size: 75px;
     line-height: 50px;
-    background-image: linear-gradient(90deg, rgba(106,255,144,1) 0%, rgba(255,0,0,1) 100%);
     color: rgb(0, 0, 0);
+    background-color: white;
     border-radius: 50%;
-    padding: 25px 30px 30px 30px;
+    padding: 50px 30px 30px 30px;
     border: 2px solid black;
 }
 
 .buttons a:hover {
     color: aqua;
     cursor: pointer;
+    background-image: linear-gradient(90deg, rgba(106,255,144,1) 0%, rgba(255,0,0,1) 100%);
 }
 
 .button img {
@@ -116,77 +114,28 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     z-index: -99;
-    padding-top: 30vh;
 }
 
 .background-grid img {
     width: 50vw;
 }
 
-/* UITZONDERINGEN */
-
-.top {
-    padding-top: 500px;
-}
-
-
-.right {
-    padding-left: 50vw;
-}
 
 /* LAYERS */
-
-/** HAND **/
-.layer__hand {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 0;
-    height: 9195px;
-    padding: 25px;
-}
-
-.layer__hand img {
-    max-width: 20%;
-}
-
-/** CUT **/
-.layer__cut {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 0;
-    height: 9195px;
-}
-
-.layer__cut img{
-    max-width: 100%;
-}
-
-/** GIF **/
-.layer__gif {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 0;
-    height: 9195px
-}
-
-.layer__gif img{
-    max-width: 50%;
-}
-
 /** STICKER **/
-.layer__sticker {
+.sticker {
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    top: 50px;
-    height: 9195px;
+    top: 100px;
+    left: 0;
+    height: 4591px;
+}
+
+.sticker img {
+    width: 50vw;
+    padding: 0 15px 0 15px;
 }
 
 
