@@ -4,13 +4,8 @@ body {
 }
 
 @font-face {
-    font-family: 'BaseMonoReg';
-    src: url(/fonts/BaseMonoNarrowReg.otf);
-}
-
-@font-face {
-    font-family: 'BaseMonoBold';
-    src: url(/fonts/BaseMonoNarrowBold.otf);
+    font-family: 'MatrixRegular';
+    src: url(/fonts/MatrixRegular.otf);
 }
 
 @font-face {
@@ -61,8 +56,8 @@ img {
 }
 
 a.name {
-    font-family: 'BaseMonoReg';
-    font-size: 15px;
+    font-family: 'MatrixRegular';
+    font-size: 22px;
     padding: 6px 0 0 15px;
     color: rgb(0, 0, 0);
     text-decoration: none;
