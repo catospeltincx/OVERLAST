@@ -17,6 +17,7 @@ body {
     src: url(/fonts/Kanalisirung.otf);
 }
 
+
 p {
     margin: 0;
 }
@@ -27,7 +28,7 @@ img {
 }
 
 /* HEADER */
-header {
+/* header {
     height: fit-content;
 }
 
@@ -77,23 +78,10 @@ header {
 .menu a:hover {
     color: aqua;
     
-}
-
-/* GIFS */
-.gifs {
-    width: 50vw;
-    z-index: 100;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 5000px;
-    top: 0;
-    
-}
+} */
 
 /* BUTTONS */
-.buttons {
+/* .buttons {
     width: 100vw;
     z-index: 101;
     position: absolute;
@@ -104,7 +92,7 @@ header {
     height: 6167px;
 }
 
-.button {
+ .button {
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -119,9 +107,7 @@ header {
     font-size: 75px;
     color: rgb(0, 0, 0);
     background-color: rgb(144, 144, 144);
-    /* border-radius: 50%; */
     padding: 15px 15px 5px 15px;
-    /* border: 2px solid black; */
     box-shadow:  0px 0px 50px 70px rgb(255, 226, 83);
     border-bottom: 6px inset rgba(0,0,0,.5);
 	border-left: 6px inset rgba(0,0,0,.5);
@@ -138,132 +124,114 @@ header {
 .button img {
     width: 50vw;
     z-index: 103;
-}
+} */
 
 
-/* BACKGROUND */
-.background-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    z-index: -99;
-    padding-top: 100px;
-}
-
-.background-grid img {
-    width: 50vw;
-}
-
-
-/** STICKER **/
-.sticker {
+/*** LAYERS ***/
+/* POSTERS */
+.layer-0 {
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 15vh;
-    left: 0;
-    height: 6660px;
+    top: 0;
+
 }
 
-.sticker img {
-    width: 50vw;
+/* STICKERS */
+.layer-1 {
+    position: absolute;
+    top: 0;
 }
 
-/* SPECIALS */
-.top {
-    padding-top: 400px;
-}
-
-.left {
-    padding-left: 50vw;
+/* PICS */
+.layer-2 {
+    position: absolute;
+    top: 0;
 }
 
 
-@media screen and (min-width: 600px) {
-
-    /* HEADER */
-    .intro {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .intro img {
-        position: absolute;
-        top: 25px;
-        right: 50px;
-        width: 200px
-    }
-
-    .intro p {
-        position: absolute;
-        top: -40px;
-        max-width: 250px;
-        padding-left: 250px;
-    }
-
-    /* BACKGROUND */
-    .background-grid {
-        display: grid;
-        padding-top: 30vh;
-        grid-template-columns: 33.33vw 33.33vw 33.33vw;
-    }
-
-    .background-grid img {
-        width: 33.33vw;
-    }
+/* GIFS */
+.layer-3 {
+    position: absolute;
+    top: 0;
+}
 
 
-    /* STICKERS */
-    .sticker {
+
+@media screen and (min-width: 850px) {
+
+    /*** LAYERS ***/
+    /* POSTERS */
+    .layer-0 {
         padding-top: 30vh;
         display: grid;
         grid-template-columns: 25vw 25vw 25vw 25vw;
-        height: 2055px;
     }
 
-    .sticker img {
+    .layer-0 img {
         width: 25vw;
+    }
+
+    /* STICKERS */
+    .layer-1 {
+        padding-top: 30vh;
+        display: grid;
+        grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    }
+
+    .layer-1 img {
+        width: 20vw;
+    }
+
+    /* PICS */
+    .layer-2 {
+        padding-top: 30vh;
+        display: grid;
+        grid-template-columns: 33.33vw 33.33vw 33.33vw;
+        grid-template-rows: 52vh 10vh;
+    }
+
+    .layer-2 img{
+        width: 33.33vw;
     }
 
     /* GIFS */
-    .gifs {
+    .layer-3 {
         padding-top: 30vh;
         display: grid;
-        grid-template-columns: 50vw 50vw;
-        height: 2055px;
+        grid-template-columns: 33.33vw 33.33vw 33.33vw;
+        grid-template-rows: 78vh 10vh;
     }
 
-    .gifs img {
-        width: 25vw;
-    }
-
-
-    /* BUTTONS */
-    .buttons {
-        top: 50vh;
-        height: 2055px;
-    }
-
-    .button img  {
+    .layer-3 img {
         width: 15vw;
     }
 
-    .button a {
-        font-size: 35px;
-        box-shadow:  0px 0px 50px 30px rgb(255, 226, 83);    
+  }
 
+
+/* ZET ONDERKANTEN GELIJK */
+  @media screen and (min-width: 1000px) {
+    .layer-2 {
+        grid-template-rows: 60vh 10vh;
     }
 
-    /* SPECIALS */
-    .top {
-        padding-top: 0;
+    .layer-3{
+        grid-template-rows: 95vh 10vh;
     }
+  }
 
-    .left {
-        padding-left: 0;
+  @media screen and (min-width: 1400px) {
+    .layer-2 {
+        grid-template-rows: 80vh 10vh;
     }
     
+    .layer-3{
+        grid-template-rows: 130vh 10vh;
+    }
   }
+
+
+
+  
 
 
 
