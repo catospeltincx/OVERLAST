@@ -31,7 +31,7 @@ img {
 
 /* HEADER */
 header {
-    height: 200px
+    height: 180px
 }
 
 body {
@@ -43,20 +43,22 @@ body {
 .intro {
     display: flex;
     flex-direction: row;
+    width: 100vw;
+    padding-top: 15px;
 }
 
 .intro img {
-    height: auto;
-    width: 100px;
+    height: 75px;
+    width: 75px;
     margin: 15px 15px 0 15px;
 }
 
 .intro p {
-    color: rgb(255, 255, 255);
-    font-size: 26px;
-    width: 250px;
-    margin: 20px 0 0 10px;
-    font-family: "Kabeljauw Text Medium";
+    color: rgb(240, 31, 255);
+    font-size: 22px;
+    line-height: 28px;
+    margin: 30px 25px 0 10px;
+    font-family: 'Kanalisirung';
 }
 
 .menu {
@@ -64,13 +66,14 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding: 15px;
-    width: 100vw;
+    width: 83vw;
+    max-width: 310px;
 }
 
 .menu-item img {
     display: flex;
     flex-direction: column;
-    height: 12vh;
+    height: 30px;
     visibility: hidden;
 }
 
@@ -102,60 +105,11 @@ body {
     background-image: linear-gradient(90deg, rgba(106,255,144,1) 0%, rgba(255,0,0,1) 100%);
 }
 
-
-/* BUTTONS */
-/* .buttons {
-    width: 100vw;
-    z-index: 101;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 0;
-    height: 6167px;
-}
-
- .button {
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    margin: 0 auto 0 auto;
-    text-align: center;
-
-}
-
-.button a {
-    text-decoration: none;
-    font-family: 'Kanalisirung';
-    font-size: 75px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(144, 144, 144);
-    padding: 15px 15px 5px 15px;
-    box-shadow:  0px 0px 50px 70px rgb(255, 226, 83);
-    border-bottom: 6px inset rgba(0,0,0,.5);
-	border-left: 6px inset rgba(0,0,0,.5);
-	border-right: 6px inset rgba(255,255,255,.5);
-	border-top: 6px inset rgba(255,255,255,.5);    
-}
-
-.buttons a:hover {
-    color: aqua;
-    cursor: pointer;
-    background-image: linear-gradient(90deg, rgba(106,255,144,1) 0%, rgba(255,0,0,1) 100%);
-}
-
-.button img {
-    width: 50vw;
-    z-index: 103;
-} */
-
-
-
 /*** LAYERS ***/
 /* POSTERS */
 .layer-0 {
     position: absolute;
-    top: 200px;
+    top: 180px;
     display: grid;
     grid-template-columns: 50vw 50vw;
 }
@@ -163,7 +117,7 @@ body {
 /* STICKERS */
 .layer-1 {
     position: absolute;
-    top: 200px;
+    top: 180px;
     display: grid;
     grid-template-columns: 50vw 50vw;
     grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh;
@@ -176,19 +130,18 @@ body {
 /* PICS */
 .layer-2 {
     position: absolute;
-    top: 200px;
+    top: 180px;
     display: grid;
 }
 
 .layer-2 img{
-
     width: 50vw;
 }
 
 /* GIFS */
 .layer-3 {
     position: absolute;
-    top: 200px;
+    top: 180px;
     display: flex;
     flex-direction: column;
 }
@@ -207,24 +160,42 @@ body {
     header {
         display: flex;
         flex-direction: row;
-    } 
-
-    .intro img {
-        width: 120px;
-        height: 120px;
-        margin: 15px 50px 15px 15px;
-    }
+        height: 213px;
+    }  
 
     .menu {
-        column-gap: 100px;
         justify-content: right;
         padding: 30px;
+        max-width: 60vw;
+        justify-content: space-between;
     }
-
 
     .menu-item img {
         visibility: visible;
-        margin-top: 50px;
+        margin-top: 60px;
+        height: 110px;
+        width: auto;
+    }
+
+    .intro {
+        width: 40vw;
+    }
+
+
+    .layer-0{
+        top: 213px;
+    }
+
+    .layer-1{
+        top: 213px;
+    }
+
+    .layer-2{
+        top: 213px;
+    }
+
+    .layer-3{
+        top: 213px;
     }
  
 }
