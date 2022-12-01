@@ -43,8 +43,9 @@ body {
 .intro {
     display: flex;
     flex-direction: row;
-    width: 100vw;
     padding-top: 15px;
+    position: absolute;
+    right: 0;
 }
 
 .intro img {
@@ -179,8 +180,6 @@ body {
 
     .intro {
         width: 40vw;
-        position: absolute;
-        right: 0;
     }
 
 
