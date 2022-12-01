@@ -28,57 +28,47 @@ img {
 }
 
 /* HEADER */
-/* header {
+header {
     height: fit-content;
 }
 
-.intro {
+.menu {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
 }
 
-.intro img{
-   width: 50vw;
-}
-
-
-.intro p {
-    padding: 7vh 0 0 15px;
-    color: rgb(255, 30, 229);
-    font-size: 25px;
-    font-family: 'Kanalisirung';
-    letter-spacing: 3px;
-    width: 50vw;
-}
-
-.menu {
-    width: fit-content;
-    z-index: 103; 
-    position: fixed;
+.logo {
+    position: absolute;
     top: 0;
-    word-spacing: 7px;
-    background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(106,255,144,1) 100%);
-    padding: 2px 10px 4px 10px;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    border-top: 0;
-    border-left: 0;
-    word-spacing: 15px;
+    height: 155px;
+    width: auto;
 }
 
-.menu a {
+.menu-item img {
+    display: flex;
+    flex-direction: column;
+    height: 12vh;
+    visibility: hidden;
+}
+
+.menu-item a {
+    position: fixed;
+    z-index: 100;
+    display: block;
+    text-align: center;
     text-decoration: none;
-    font-family: 'MatrixRegular';
-    font-size: 25px;
+    font-family: 'Kanalisirung';
+    font-size: 18px;
     color: rgb(0, 0, 0);
-    width: fit-content;
-    margin-bottom: 5px; 
+    background-color: rgb(192, 191, 191);
+    padding: 5px 18px 2px 18px;
+    border-bottom: 3px inset rgba(0,0,0,.5);
+	border-left: 3px inset rgba(0,0,0,.5);
+	border-right: 3px inset rgba(255,255,255,.5);
+	border-top: 3px inset rgba(255,255,255,.5);  
 }
-
-.menu a:hover {
-    color: aqua;
-    
-} */
 
 /* BUTTONS */
 /* .buttons {
@@ -131,7 +121,7 @@ img {
 /* POSTERS */
 .layer-0 {
     position: absolute;
-    top: 15vh;
+    top: 17vh;
     display: grid;
     grid-template-columns: 50vw 50vw;
 }
@@ -139,25 +129,20 @@ img {
 /* STICKERS */
 .layer-1 {
     position: absolute;
-    top: 15vh;
+    top: 17vh;
     display: grid;
     grid-template-columns: 50vw 50vw;
     grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh;
-
 }
 
 .layer-1 img {
     width: 50vw;
 }
 
-
-
-
-
 /* PICS */
 .layer-2 {
     position: absolute;
-    top: 15vh;
+    top: 17vh;
     display: grid;
 }
 
@@ -165,14 +150,12 @@ img {
     width: 50vw;
 }
 
-
 /* GIFS */
 .layer-3 {
     position: absolute;
-    top: 15vh;
+    top: 17vh;
     display: flex;
     flex-direction: column;
-    
 }
 
 .layer-3 img {
@@ -184,15 +167,12 @@ img {
     margin-left: 50vw;
 }
 
-
-
 @media screen and (min-width: 850px) {
    
 
     /*** LAYERS ***/
     /* POSTERS */
     .layer-0 {
-        padding-top: 30vh;
         display: grid;
         grid-template-columns: 25vw 25vw 25vw 25vw;
     }
@@ -203,7 +183,6 @@ img {
 
     /* STICKERS */
     .layer-1 {
-        padding-top: 30vh;
         display: grid;
         grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
     }
@@ -214,7 +193,6 @@ img {
 
     /* PICS */
     .layer-2 {
-        padding-top: 30vh;
         display: grid;
         grid-template-columns: 33.33vw 33.33vw 33.33vw;
         grid-template-rows: 52vh 10vh;
@@ -226,7 +204,6 @@ img {
 
     /* GIFS */
     .layer-3 {
-        padding-top: 30vh;
         display: grid;
         grid-template-columns: 33.33vw 33.33vw 33.33vw;
         grid-template-rows: 78vh 10vh;
