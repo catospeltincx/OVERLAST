@@ -166,7 +166,7 @@ body {
     .menu {
         justify-content: right;
         padding: 30px;
-        max-width: 60vw;
+        max-width: 400px;
         justify-content: space-between;
     }
 
@@ -179,6 +179,8 @@ body {
 
     .intro {
         width: 40vw;
+        position: absolute;
+        right: 0;
     }
 
 
