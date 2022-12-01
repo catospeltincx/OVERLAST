@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+}
+
+.full-text {
+    background-color: rgb(255, 255, 255);
+    margin: 0 30vw 0 30vw;
+    padding: 5px 30px 30px 30px;
+    max-width: 500px;
+}
+
+
+ @font-face {
+     font-family: "Kabeljauw Text Medium";
+     font-style: normal;
+     src: url(/fonts/KabeljauwText-Medium.woff) format("woff");
+}
+
+p {
+    font-family: "Kabeljauw Text Medium";
+}
+
+li {
+    font-family: "Kabeljauw Text Medium";
+}

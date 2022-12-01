@@ -13,6 +13,11 @@ body {
     src: url(/fonts/Kanalisirung.otf);
 }
 
+@font-face {
+    font-family: 'Kabeljauw Text Medium';
+    src: url(/fonts/KabeljauwText-Medium.woff);
+}
+
 /* in general */
 img {
     width: 33.33vw;
@@ -56,8 +61,8 @@ img {
 }
 
 a.name {
-    font-family: 'MatrixRegular';
-    font-size: 22px;
+    font-family: 'Kabeljauw Text Medium';
+    font-size: 16px;
     padding: 6px 0 0 15px;
     color: rgb(0, 0, 0);
     text-decoration: none;
