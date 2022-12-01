@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0cm;
-    background-color: rgb(0, 0, 0);
-}
 
 @font-face {
     font-family: 'MatrixRegular';
@@ -29,33 +25,41 @@ img {
 
 /* HEADER */
 header {
-    height: fit-content;
+    height: 200px
 }
+
+body {
+    margin: 0;
+    position: relative;
+    background-color: black;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 .intro img {
     height: auto;
-    width: 24vw;
-    margin: 5px;
-    position: absolute;
-    top: 53px;
-    right: 8px;
-    
+    width: 100px;
+    margin: 5px 10px 0 0;
 }
 
 .intro p {
     color: aquamarine;
     font-size: 26px;
-    position: absolute;
-    top: 60px;
-    left: 15px;
-    width: 60vw;
+    width: 250px;
+    margin: 10px 0 0 10px;
 }
 
 .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 15px;
+    margin: 25px 15px 0 15px;
+    width: 85vw;
 }
 
 .menu-item img {
@@ -63,12 +67,11 @@ header {
     flex-direction: column;
     height: 12vh;
     visibility: hidden;
-
 }
 
 .menu-item a {
     position: fixed;
-    z-index: 100;
+    z-index: 105;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -81,14 +84,32 @@ header {
 	border-left: 3px inset rgba(0,0,0,.5);
 	border-right: 3px inset rgba(255,255,255,.5);
 	border-top: 3px inset rgba(255,255,255,.5);
-    /* margin-top: 90px; */
+    box-shadow: 0px 0px 30px 10px rgb(255, 252, 98);
+    -webkit-box-shadow: 0px 0px 30px 10px rgb(255, 252, 98);
+    -moz-box-shadow: 0px 0px 100px 10px rgb(255, 252, 98);
 }
+
 
 .menu-item a:hover {
     color: aqua;
     cursor: pointer;
     background-image: linear-gradient(90deg, rgba(106,255,144,1) 0%, rgba(255,0,0,1) 100%);
 }
+
+.secret-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90vw;
+    position: absolute;
+}
+
+.secret-menu-item img{
+    text-align: center;
+    display: block;
+    height: 35px;
+}
+
 
 /* BUTTONS */
 /* .buttons {
@@ -137,11 +158,12 @@ header {
 } */
 
 
+
 /*** LAYERS ***/
 /* POSTERS */
 .layer-0 {
     position: absolute;
-    top: 17vh;
+    top: 200px;
     display: grid;
     grid-template-columns: 50vw 50vw;
 }
@@ -149,7 +171,7 @@ header {
 /* STICKERS */
 .layer-1 {
     position: absolute;
-    top: 17vh;
+    top: 200px;
     display: grid;
     grid-template-columns: 50vw 50vw;
     grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh;
@@ -162,18 +184,19 @@ header {
 /* PICS */
 .layer-2 {
     position: absolute;
-    top: 17vh;
+    top: 200px;
     display: grid;
 }
 
 .layer-2 img{
+
     width: 50vw;
 }
 
 /* GIFS */
 .layer-3 {
     position: absolute;
-    top: 17vh;
+    top: 200px;
     display: flex;
     flex-direction: column;
 }
@@ -187,6 +210,46 @@ header {
     margin-left: 50vw;
 }
 
+@media screen and (min-width: 650px){
+    .layer-0 {
+        top: 25vh;
+    }
+
+    .layer-1 {
+        top: 25vh;
+    }
+
+    .layer-2 {
+        top: 25vh;
+    }
+
+    .layer-3 {
+        top: 25vh;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+    } 
+
+    .menu {
+        column-gap: 100px;
+        justify-content: left;
+    }
+
+
+    .menu-item img {
+        visibility: visible;
+        margin-top: 50px;
+    }
+
+
+    
+    
+}
+
+
+/*** MOSTY MAKING LAYERS (MAIN-PAGE) RESPONSIVE HERE ***/
 @media screen and (min-width: 850px) {
    
 
