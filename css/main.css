@@ -36,39 +36,19 @@ header {
 
 body {
     margin: 0;
-    position: relative;
     background-color: black;
 }
 
-.intro {
-    display: flex;
-    flex-direction: row;
-    padding-top: 15px;
-    position: absolute;
-    right: 0;
-}
 
-.intro img {
-    height: 75px;
-    width: 75px;
-    margin: 15px 15px 0 15px;
-}
-
-.intro p {
-    color: rgb(240, 31, 255);
-    font-size: 22px;
-    line-height: 28px;
-    margin: 30px 25px 0 10px;
-    font-family: 'Kanalisirung';
-}
 
 .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 15px;
+    padding: 30px;
     width: 83vw;
     max-width: 310px;
+    /* margin-left: 10px; */
 }
 
 .menu-item img {
@@ -104,6 +84,14 @@ body {
     color: aqua;
     cursor: pointer;
     background-image: linear-gradient(90deg, rgba(106,255,144,1) 0%, rgba(255,0,0,1) 100%);
+}
+
+img.intro {
+    position: absolute;
+    right: 15px;
+    top: 63px;
+    width: 90px;
+    height: auto;
 }
 
 /*** LAYERS ***/

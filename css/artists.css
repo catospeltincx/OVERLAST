@@ -75,13 +75,13 @@ header {
     background-image: linear-gradient(90deg, rgba(106,255,144,1) 0%, rgba(255,0,0,1) 100%);
 }
 
+/* handen */
 .img-item {
-    display: flex;
-    flex-direction: column;
     height: 30px;
     visibility: hidden;
 }
 
+/* gif */
 img.intro {
     position: absolute;
     left: 15px;
@@ -175,28 +175,36 @@ a.name {
 
 /* desktop */
 @media screen and (min-width: 850px){
-    header {
-        display: flex;
-        flex-direction: row;
-        height: 213px;
-    }  
 
     .menu {
-        justify-content: right;
-        padding: 30px;
+        padding: 30px 30px 0 30px;
         max-width: 400px;
         justify-content: space-between;
     }
 
-    .menu-item img {
-        visibility: visible;
-        margin-top: 15px;
-        height: 110px;
-        width: auto;
+    .img {
+        display: flex;
+        flex-direction: row;
+        max-width: 400px;
+        justify-content: space-between;
+        padding: 20px 0 0 55px;
     }
 
-    .intro {
-        width: 40vw;
+    .img-item img{
+        visibility: visible;
+        height: 110px;
+        width: auto;
+        padding: 0 30px 0 30px;
+        
+    }
+
+    img.intro {
+       position: absolute;
+       right: 15px;
+       top: 15px;
+       left: 79vw;
+       width: 220px;
+       height: auto;
     }
 
     img {
