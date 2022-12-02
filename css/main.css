@@ -144,7 +144,9 @@ img.intro {
 }
 
 .egg {
-    cursor: url(/src/cursor/varken-1.png), auto;
+    width: 100px;
+    height: 100px;
+    cursor: url(/src/cursor/logo.png), auto;
     display: block;
 }
 
