@@ -170,7 +170,7 @@ img {
 
 a.name {
     font-family: 'Kabeljauw Text Medium';
-    font-size: 13px;
+    font-size: 15px;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -178,7 +178,7 @@ a.name {
 }
 
 /* desktop */
-@media screen and (min-width: 850px){
+@media screen and (min-width: 700px){
 
     .menu {
         padding: 30px 30px 0 30px;
@@ -258,5 +258,37 @@ a.name {
         margin: 0 10vw 14vh 5vw ;
     }
 
+}
+
+@media screen and (min-width: 850px){
+    img {
+        width: 11vw;
+        padding-top: 5px;
+    }
+
+
+    .wrap_2022 {
+        grid-template-columns: repeat(5, 11vw);
+    }
+
+    .wrap_2021 {
+        grid-template-columns: repeat(6, 11vw);
+    }
+
+    .wrap_2020 {
+        grid-template-columns: repeat(2, 11vw);
+    }
+
+    .wrap_2019 {
+        grid-template-columns: repeat(4, 11vw);
+    }
+
+    .wrap_2018 {
+        grid-template-columns: repeat(4, 11vw);
+    }
+
+    .wrap_2017 {
+        grid-template-columns: repeat(5, 11vw);
+    }
 }
 
