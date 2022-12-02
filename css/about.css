@@ -130,6 +130,18 @@ ul {
     list-style-type: upper-roman;
 }
 
+a.event-link {
+    text-decoration: none;
+    color: rgb(72, 0, 255);
+    font-family: "Kabeljauw Text Medium";
+    font-size: 17px;
+    line-height: 24px;
+}
+
+a.event-link:hover {
+    color: red;
+}
+
 @media screen and (min-width: 850px){
 
     /* HEADER */
