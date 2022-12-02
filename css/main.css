@@ -40,7 +40,6 @@ body {
 }
 
 
-
 .menu {
     display: flex;
     flex-direction: row;
@@ -144,6 +143,11 @@ img.intro {
     margin-left: 50vw;
 }
 
+.egg {
+    cursor: url(/src/cursor/varken-1.png), auto;
+    display: block;
+}
+
 @media screen and (min-width: 850px){
 
     header {
@@ -181,19 +185,19 @@ img.intro {
     }
 
 
-    .layer-0{
+    .layer-0 {
         top: 213px;
     }
 
-    .layer-1{
+    .layer-1 {
         top: 213px;
     }
 
-    .layer-2{
+    .layer-2 {
         top: 213px;
     }
 
-    .layer-3{
+    .layer-3 {
         top: 213px;
     }
  
