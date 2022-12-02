@@ -127,6 +127,7 @@ li {
 
 ul {
     margin: 5px 0 25px 0;
+    list-style-type: upper-roman;
 }
 
 @media screen and (min-width: 850px){
@@ -159,7 +160,7 @@ ul {
        right: 15px;
        top: 15px;
        left: 79vw;
-       width: 220px;
+       width: 185px;
        height: auto;
     }
 

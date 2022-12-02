@@ -88,9 +88,9 @@ body {
 
 img.intro {
     position: absolute;
-    right: 15px;
-    top: 63px;
-    width: 90px;
+    left: 23px;
+    top: 90px;
+    width: 80px;
     height: auto;
 }
 
@@ -164,6 +164,16 @@ img.intro {
         margin-top: 60px;
         height: 110px;
         width: auto;
+    }
+
+    img.intro {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        left: 79vw;
+        width: 185px;
+        height: auto;
+        
     }
 
     .intro {
