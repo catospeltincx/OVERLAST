@@ -3,12 +3,7 @@ body {
     margin: 0;
 }
 
-.full-text {
-    background-color: rgb(255, 255, 255);
-    padding:  30px 30px 30px;
-    max-width: 80vw;
-    margin-top: 20px ;
-}
+
 
 
  @font-face {
@@ -88,12 +83,50 @@ img.intro {
     height: 90px;
 }
 
+/* TEXT */
+img.varken {
+    width: 117px;
+    padding: 15px 0 0 120px;
+}
+
+.text-wrap {
+    background-color: rgb(255, 255, 255);
+    width: 90vw;
+    margin-bottom: 100px;
+    padding-bottom: 30px;
+}
+
+.full-text {
+    margin: 0 30px 30px 50px;
+}
+
+.title {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+.text {
+    margin: 5px 0 25px 0;
+}
+
+
 p {
     font-family: "Kabeljauw Text Medium";
+    font-size: 17px;
+    line-height: 24px;
 }
 
 li {
     font-family: "Kabeljauw Text Medium";
+    font-size: 17px;
+    list-style-type: upper-roman;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin: 5px 0 25px 0;
 }
 
 @media screen and (min-width: 850px){
@@ -131,9 +164,11 @@ li {
     }
 
     /* TEXT */
-    .full-text{
-        max-width: 60vw;
-        margin: 20px 20vw 0 20vw;
+    .text-wrap {
+        margin: 25px 15vw 100px 15vw;
+        max-width: 650px;
+
+        
     }
 
  
