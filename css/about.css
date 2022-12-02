@@ -91,7 +91,7 @@ img.varken {
 
 img.week {
     width: 250px;
-    padding: 15px 0 20px 120px;
+    padding: 15px 0 20px 50px;
 }
 
 .text-wrap {
@@ -105,22 +105,30 @@ img.week {
     margin: 0 30px 30px 50px;
 }
 
-.title {
+p.title {
     margin-top: 0;
     text-align: center;
     margin-bottom: 0;
     text-decoration: underline;
-}
-
-.text {
-    margin: 5px 0 25px 0;
-}
-
-
-p {
     font-family: "Kabeljauw Text Medium";
     font-size: 17px;
     line-height: 24px;
+}
+
+p.text {
+    margin: 5px 0 25px 0;
+    font-family: "Kabeljauw Text Medium";
+    font-size: 17px;
+    line-height: 24px;
+}
+
+
+.datum {
+    padding: 15px;
+    font-family: "Kabeljauw Text Medium";
+    font-size: 17px;
+    line-height: 24px;
+    color: rgb(255, 35, 35);
 }
 
 li {
@@ -145,6 +153,22 @@ a.event-link {
 
 a.event-link:hover {
     color: red;
+}
+
+.datum {
+    padding-left: 15px 0 0 15px;
+}
+
+.poster-group {
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+    margin: 25px;
+}
+
+.poster-group img {
+    width: auto;
+    height: 40vw;
 }
 
 @media screen and (min-width: 850px){
