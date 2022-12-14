@@ -35,26 +35,21 @@ body {
 }
 
 /* HEADER */
-header {
-    height: 180px
-}
-
 .menu {
     display: flex;
     flex-direction: row;
     width: 100vw;
     justify-content: space-between;
-    padding: 35px 25px 0 25px;
+    padding: 40px 30px 0 30px;
+    max-width: 410px;
 }
 
 .menu-item img {
-    display: flex;
-    flex-direction: column;
-    height: 30px;
-    visibility: hidden;
+    height: 50px;
 }
 
 .menu-item a {
+    position: relative;
     z-index: 105;
     text-align: center;
     text-decoration: none;
@@ -80,26 +75,39 @@ header {
     background-image: linear-gradient(90deg, rgba(106,255,144,1) 0%, rgba(255,0,0,1) 100%);
 }
 
-.img-item {
+.img {
     display: flex;
-    flex-direction: column;
-    height: 30px;
+    flex-direction: row;
+    max-width: 410px;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.img-item img{
+    height: 100px;
+    width: auto;
+    padding: 0 15px 5px 15px;
+}
+
+.intro {
+    position: absolute;
+    top: 120px;
+    left: 95px;
+    height: 60px;
+    width: auto;
+}
+
+.varken {
+
     visibility: hidden;
 }
 
-img.intro {
-    position: absolute;
-    left: 23px;
-    top: 90px;
-    width: 80px;
-    height: auto;
-}
 
 /*** LAYERS ***/
 /* POSTERS */
 .layer-0 {
     position: absolute;
-    top: 180px;
+    top: 190px;
     display: grid;
     grid-template-columns: 50vw 50vw;
 }
@@ -107,7 +115,7 @@ img.intro {
 /* STICKERS */
 .layer-1 {
     position: absolute;
-    top: 180px;
+    top: 190px;
     display: grid;
     grid-template-columns: 50vw 50vw;
     grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh;
@@ -120,7 +128,7 @@ img.intro {
 /* PICS */
 .layer-2 {
     position: absolute;
-    top: 180px;
+    top: 190px;
     display: grid;
 }
 
@@ -131,7 +139,7 @@ img.intro {
 /* GIFS */
 .layer-3 {
     position: absolute;
-    top: 180px;
+    top: 190px;
     display: flex;
     flex-direction: column;
 }
@@ -152,58 +160,25 @@ img.intro {
     display: block;
 }
 
-@media screen and (min-width: 850px){
-
-    /* HEADER */
-    .menu {
-        padding: 30px 30px 0 30px;
-        max-width: 400px;
-        justify-content: space-between;
-    }
-
-    .img {
-        display: flex;
-        flex-direction: row;
-        max-width: 400px;
-        justify-content: space-between;
-        padding: 20px 0 0 55px;
-    }
-
-    .img-item img{
-        visibility: visible;
-        height: 110px;
-        width: auto;
-        padding: 0 30px 0 30px;
-        
-    }
-
-    img.intro {
-       position: absolute;
-       right: 15px;
-       top: 15px;
-       left: 79vw;
-       width: 185px;
-       height: auto;
-    }
-
-
-    .layer-0 {
-        top: 213px;
-    }
-
-    .layer-1 {
-        top: 213px;
-    }
-
-    .layer-2 {
-        top: 213px;
-    }
-
-    .layer-3 {
-        top: 213px;
-    }
- 
+.www-credits {
+    z-index: 107;
+    display: block;
+    text-align: right;
+    bottom: 0;
 }
+
+@media screen and (min-width: 570px){
+    .varken{
+        visibility: visible;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 170px;
+        width: auto;
+        /* display: none; */
+    }
+}
+
 
 
 /*** MOSTY MAKING LAYERS (MAIN-PAGE) RESPONSIVE HERE ***/

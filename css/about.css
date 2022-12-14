@@ -32,7 +32,6 @@ header {
     color: rgb(0, 255, 255);
 }
 
-
 .menu {
     display: flex;
     flex-direction: row;
@@ -170,6 +169,8 @@ a.event-link:hover {
     width: auto;
     height: 40vw;
 }
+
+
 
 @media screen and (min-width: 850px){
 
